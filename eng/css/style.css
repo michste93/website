@@ -92,10 +92,15 @@ Navigation
 	top:-30px;
 	z-index: 1005 !important;
 	padding-left:10px;
+	width:200px;
 }
 .lang-switch a{
     width:25px;
 	height:50px;
+	opacity:0.8;
+}
+.lang-switch a:hover{
+	opacity:1;
 }
 .lang-switch a img{
 	display:inline-block;
@@ -150,6 +155,7 @@ Navigation
     -webkit-transition: left 0.3s, opacity 0.3s;
     -moz-transition: left 0.3s, opacity 0.3s;
     transition: left 0.3s, opacity 0.3s;
+    
   }
   #cd-logo.is-hidden.slide-in {
     /* slide in when the secondary navigation gets fixed */
@@ -167,6 +173,7 @@ Navigation
   height: 100%;
   background: url("../img/cd-icon-menu.svg") no-repeat center center;
   background-size: 44px 44px;
+  
 }
 .cd-primary-nav ul {
   position: absolute;
@@ -851,6 +858,7 @@ Placeholder Sections
 .cd-section {
   margin: 0 auto;
   padding: 2em 0;
+  height: 300px;
 }
 .cd-section h2 {
   font-size: 20px;
@@ -859,7 +867,25 @@ Placeholder Sections
   font-weight: 700;
 }
 .cd-section p {
-  line-height: 1.6;
+  line-height: 20;
+  text-align:center;
+  margin:0 auto;
+}
+#cd-placeholder-1{
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image:url('../img/suite.jpg');
+    opacity:0.7;
+}
+#cd-placeholder-1:hover{
+   opacity:1;
+}
+#cd-placeholder-1:clicked{
+   opacity:1;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -868,6 +894,7 @@ Placeholder Sections
   left:-90px;
   right:0;
   padding: 2em 0;
+  
 }
 .cd-section h2 {
   font-size: 20px;
@@ -878,13 +905,14 @@ Placeholder Sections
 .cd-section p {
   line-height: 1.6;
 }
-}
 #cd-placeholder-1{
-  width: 100%;
+    width: 100%;
     height: 100%;
-     color: transparent;
+    background-color: transparent;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: none;
-  background-image:url('../img/suite.jpg')
+    background-repeat: no-repeat;
+    background-image:url('../img/suite.jpg')
 }
+}
+

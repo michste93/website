@@ -180,6 +180,14 @@
 		margin-left:auto;
 		margin-right:auto;
 	}
+	.footer-center div a{
+		opacity:0.8;
+		
+	}
+	.footer-center div a:hover{
+		opacity:1;
+		
+	}
 
 }
 @media (min-width: 880px) {
