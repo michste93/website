@@ -867,9 +867,13 @@ Placeholder Sections
   font-weight: 700;
 }
 .cd-section p {
+  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20;
+  font-weight: 700;
   text-align:center;
   margin:0 auto;
+  color:#E0E0FF;
 }
 #cd-placeholder-1{
     width: 100%;
