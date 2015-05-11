@@ -30,17 +30,8 @@ img {
 Modules - reusable parts of our design
 
 -------------------------------- */
-.cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width:768px;
-  margin: 0 auto;
-}
-.cd-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+
 
 .has-top-margin {
   /* this class is given - using jQuery - to the .cd-main-content following the .cd-secondary-nav when it becomes fixed */
@@ -186,6 +177,7 @@ Navigation
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
+
 .cd-primary-nav ul.is-visible {
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
@@ -203,6 +195,7 @@ Navigation
   background: #000101;
   border-top: 1px solid #051426;
   color: gray;
+  opacity: 0.9;
 }
 .fixed-menu{
 	display:none;
@@ -225,7 +218,7 @@ Navigation
   	display: block;
   	font-family: "Lato",sans-serif;
   	font-size: 16px;
-  	height: 50px;
+  	height: 50px;background
   	line-height: 22px;
   	text-align: center;
   	text-decoration: none;
@@ -243,15 +236,19 @@ Navigation
 }
 @media only screen and (min-width: 768px) {
   .sidebar{
-	height:100%;
-	width:200px;
+    position:absolute;
+    top:600px;
+    left:0;
+    height:1500px;
+	width:16%;
+	background-image:url(../img/bg1.png);
 }
   .fixed-menu{
   display: block; 
   position:fixed;
-  width:200px;
+  width:16%;
   z-index: 1002 !important;
-  height: 500px;
+  height: 400px;
   background-image:url('../img/bg2.png') ;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -281,6 +278,7 @@ Navigation
     display:none;
     /* reset navigation values */
    }
+   
   
 }
 
@@ -291,12 +289,14 @@ Intro
 -------------------------------- */
 #cd-intro {
   position: relative;
+  top:50px;
+  left:0;
   height: 300px;
   z-index: 2;
 }
 #cd-intro::after {
   content: "";
-  background: transparent url(../images/pattern.png) repeat top left;
+  background: transparent url(../img/pattern.png) repeat top left;
   background-size: cover;
   top: 0;
   left: 0;
@@ -305,6 +305,60 @@ Intro
   position: absolute;
   z-index: -1;   
 }
+.winter{
+	position: relative;
+  top:50px;
+  left:0;
+  height: 300px;
+  z-index: 2;
+}
+.winter::after {
+  content: "";
+  background: transparent url(../img/winter.jpg) no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+.summer{
+	position: relative;
+  top:50px;
+  left:0;
+  height: 300px;
+  z-index: 2;
+}
+.summer::after {
+  content: "";
+  background: transparent url(../img/summer.jpg) no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+#cd-intro-fix {
+  position: relative;
+  top:50px;
+  left:0;
+  height: 300px;
+  z-index: 2;
+}
+#cd-intro-fix::after {
+    content: "";
+  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 
 #cd-intro-tagline{
     position: relative;
@@ -312,6 +366,28 @@ Intro
     padding-left:auto;
     padding-right:auto;
 	z-index: 1000 !important;
+}
+#cd-intro #cd-intro-tagline {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+}
+#cd-intro-fix #cd-intro-tagline {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+}
+
+#cd-intro h1, #cd-intro-fix h1 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #030d18;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .cb-slideshow li span { 
     width: 100%;
@@ -524,38 +600,37 @@ Intro
 @media screen and (max-width: 600px) { 
     .cb-slideshow li div h3 { font-size: 80px }
 }
-#cd-intro #cd-intro-tagline {
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 120px;
-}
 
-#cd-intro h1, #cd-intro-tagline h1 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: #030d18;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
 @media only screen and (min-width: 768px) {
   #cd-intro {
-    height: 400px;
+    position:relative;
+    top:0;
+    left:0;
+    height: 600px;
+  }
+  #cd-intro-fix {
+    position:relative;
+    top:0;
+    left:0;
+    height: 600px;
   }
   #cd-intro #cd-intro-tagline {
     padding-top: 160px;
   }
-  #cd-intro h1 {
+  #cd-intro-fix #cd-intro-tagline {
+    padding-top: 160px;
+  }
+  #cd-intro h1, #cd-intro-fix h1{
     font-size: 32px;
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1170px) {
-  #cd-intro {
-    height: 600px;
-  }
+  
   #cd-intro #cd-intro-tagline {
+    padding-top: 250px;
+  }
+  #cd-intro-fix #cd-intro-tagline {
     padding-top: 250px;
   }
 }
@@ -871,23 +946,41 @@ Placeholder Sections
   font-weight: 700;
 }
 .cd-section p {
+  color:gray;
+  opacity:1;
   font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 20;
-  font-weight: 700;
-  text-align:center;
-  margin:0 auto;
-  color:#E0E0FF;
+  font-weight: 900;
+  line-height: 25px;
+  position: relative;
+  top:50%;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 417px;
+  margin: 0 auto;
+
 }
-#cd-placeholder-1{
-    width: 100%;
+.cd-section p span{
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+
+}
+#cd-placeholder-1, #cd-placeholder-2{
+  width: 100%;
     height: 300px;
-    background-color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-image:url('../img/suite.jpg');
-    opacity:0.7;
+  background-color: transparent;
+  background-image:url(../img/suite.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;  
+    
+}
+#cd-placeholder-1::after{
+  
+  
 }
 #cd-placeholder-1:hover{
    opacity:1;
@@ -895,11 +988,15 @@ Placeholder Sections
 #cd-placeholder-1:clicked{
    opacity:1;
 }
+#cd-placeholder-2:clicked{
+   opacity:1;
+}
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 768px) {
   .cd-section {
   padding: 2em 0;
-  margin-left:200px;
+  display:inline-block;
+  vertical-align: top;
 }
 
 .cd-section h2 {
@@ -912,13 +1009,38 @@ Placeholder Sections
   line-height: 1.6;
 }
 #cd-placeholder-1{
-    width: 100%;
-    height: 400px;
+    margin-left:16%;
+    width: 42%;
+    height: 200px;
     background-color: transparent;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-image:url('../img/suite.jpg')
+    background-repeat: none;
+    background-image:url('../img/suite.jpg');
+    opacity:0.8;
+}
+#cd-placeholder-2{
+margin-left:-5px;
+    width: 42%;
+    height: 200px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-image:url('../img/suite.jpg');
+    opacity:0.8;
+}
+#cd-placeholder-1:hover{
+   opacity:1;
+}
+#cd-placeholder-2:hover{
+   opacity:1;
+}
+#cd-placeholder-1:clicked{
+   opacity:1;
+}
+#cd-placeholder-2:clicked{
+   opacity:1;
 }
 }
 
