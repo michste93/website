@@ -10,10 +10,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="//jqueryui.com/jquery-wp-content/themes/jquery/js/plugins.js"></script>
+	<script src="//jqueryui.com/jquery-wp-content/themes/jquery/js/main.js"></script>
 	
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
   	<title>Berghotel Miramonti - Val di Fiemme Dolomiti</title>
 </head>
 <body>
@@ -67,16 +70,17 @@
         </ul>
 		 <!-- #cd-intro-tagline -->
 		 <form class="requestForm" action="request.php" method="post">
-           <input type="text" id="datepicker" name="arrivalDate" value="Arrival" class="data"><br>
-          <input type="text" id="datepicker" class="data" name="departureDate" value="Departure" ><br>
+           <input type="text" id="datepicker" name="arrivalDate"><br>
+          <input type="text" id="datepicker" name="departureDate"><br>
           Adults<select name="adults">
            <option value="1">1</option>
-           <option value="2">2</option>
+           <option value="2" default>2</option>
            <option value="3">3</option>
            <option value="4">4</option>
            <option value="5">5</option>
           </select>
           Kids<select name="kids">
+           <option value="0" default></option>
            <option value="1">1</option>
            <option value="2">2</option>
            <option value="3">3</option>
