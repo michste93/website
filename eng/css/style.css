@@ -153,6 +153,10 @@ Navigation
     left: 5%;
     opacity: 1;
   }
+  .fixed-menu{
+  	width:12%;
+  	height:550px;
+  }
 }
 
 
