@@ -1,4 +1,7 @@
 jQuery(document).ready(function($){
+		$.datepicker.setDefaults($.datepicker.regional['it']);
+		$(".data:input").datepicker();
+	
  /*    var url = window.location.href;
      if (url.charAt(url.length-1) == '/') {
          url = url.substr(0,url.length - 1);

@@ -153,10 +153,7 @@ Navigation
     left: 5%;
     opacity: 1;
   }
-  .fixed-menu{
-  	width:12%;
-  	height:550px;
-  }
+  
 }
 
 
@@ -199,7 +196,10 @@ Navigation
   background: #000101;
   border-top: 1px solid #051426;
   color: gray;
-  opacity: 0.9;
+  opacity: 0.8;
+}
+.cd-primary-nav a:visited{
+	opacity:1;
 }
 .fixed-menu{
 	display:none;
@@ -611,6 +611,13 @@ Intro
 /* Show at least something when animations not supported */
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
+}
+.requestForm{
+	position:absolute;
+	width:100%;
+	left:30%;
+	z-index: 1000 !important;
+	
 }
 
 @media screen and (max-width: 1140px) { 
