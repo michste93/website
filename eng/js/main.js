@@ -1,8 +1,7 @@
 jQuery(document).ready(function($){
-$(function() {
-        $.datepicker.setDefaults($.datepicker.regional['it']);
+     //$.datepicker.setDefaults($.datepicker.regional['it']);
         $("#datepicker").datepicker();
-		});
+        alert("ma che oh");
  /*    var url = window.location.href;
      if (url.charAt(url.length-1) == '/') {
          url = url.substr(0,url.length - 1);
