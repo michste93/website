@@ -10,8 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jquery/jquery-ui.css">
 	
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -71,8 +70,8 @@
         </ul>
 		 <!-- #cd-intro-tagline -->
 	<form class="requestForm" action="request.php" method="post">
-           <div class="form1"><input type="text" placeholder="Arrival" id="datepicker" name="arrivalDate">
-          <input type="text" placeholder="Departure" id="datepicker" name="departureDate"></div>
+           <div class="form1"><input type="text" placeholder="Arrival" id="depart" name="arrivalDate">
+          <input type="text" placeholder="Departure" id="return" name="departureDate"></div>
           <div class="form2">Adults<select name="adults">
            <option value="1">1</option>
            <option value="2" default>2</option>
@@ -183,5 +182,6 @@
 		
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="jquery/jquery-ui.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

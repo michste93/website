@@ -1,8 +1,11 @@
 jQuery(document).ready(function($){
-     //$.datepicker.setDefaults($.datepicker.regional['it']);
-        $("#datepicker").datepicker();
-        alert("ma che oh");
- /*    var url = window.location.href;
+      $(function() {
+$( "#depart" ).datepicker( $.datepicker.regional[ "it" ] );
+$( "#return" ).datepicker( $.datepicker.regional[ "it" ] );     
+        $("#depart").datepicker();
+        $("#return").datepicker();
+        });
+/*        var url = window.location.href;
      if (url.charAt(url.length-1) == '/') {
          url = url.substr(0,url.length - 1);
    }
