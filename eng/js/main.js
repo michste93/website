@@ -1,6 +1,5 @@
 jQuery(document).ready(function($){
 $(function() {
-        alert("function");
         $.datepicker.setDefaults($.datepicker.regional['it']);
         $( "#datepicker" ).datepicker();
 		

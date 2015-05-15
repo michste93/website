@@ -613,13 +613,38 @@ Intro
 	opacity: 1;
 }
 .requestForm{
-	position:absolute;
-	width:100%;
-	left:30%;
+	position:relative;
+	left:1%;
+	top:50%;
 	z-index: 1000 !important;
+	width:900px;
+	height: 50px;
+    line-height: 50px;
 	
 }
-
+input[type=text]{
+margin-bottom: 20px;
+margin-top: 10px;
+width:100px;
+padding: 5px;
+border-radius:4px;
+border:1px solid #7ac9b7;
+}
+input[type=submit]
+{
+margin-bottom: 20px;
+width:110px;
+padding: 5px;
+border-radius:4px;
+border:1px solid #7ac9b7;
+background-color: #4180C5;
+color: aliceblue;
+font-size:15px;
+cursor:pointer;
+}
+#datepicker{
+	display:inline-block;
+}
 @media screen and (max-width: 1140px) { 
     .cb-slideshow li div h3 { font-size: 140px }
 }
@@ -634,6 +659,9 @@ Intro
     left:0;
     height: 600px;
   }
+  #datepicker{
+	
+}
   #cd-intro-tagline{
   	position:relative;
   	top:170px;
@@ -1005,7 +1033,6 @@ Placeholder Sections
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
-  width: 417px;
   margin: 0 auto;
 
 }
@@ -1015,7 +1042,7 @@ Placeholder Sections
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
+   padding: 5px; 
 
 }
 #cd-placeholder-1, #cd-placeholder-2,#cd-placeholder-3,#cd-placeholder-4,#cd-placeholder-5,#cd-placeholder-6{
@@ -1033,19 +1060,19 @@ Placeholder Sections
   opacity:1;	
 }
 #cd-placeholder-1{
-	background-image:url('../img/suite.jpg');
+	background-image:url('../img/trekking.jpg');
+}
+#cd-placeholder-2{
+	background-image:url('../img/beauty.jpg');
 }
 #cd-placeholder-3{
 	background-image:url('../img/camera.jpg');
 }
-#cd-placeholder-5{
-	background-image:url('../img/winter.jpg');
-}
-#cd-placeholder-2{
-	background-image:url('../img/sauna.jpg');
-}
 #cd-placeholder-4{
 	background-image:url('../img/summer.jpg');
+}
+#cd-placeholder-5{
+	background-image:url('../img/winter.jpg');
 }
 #cd-placeholder-6{
 	background-image:url('../img/well.jpg');
@@ -1057,7 +1084,15 @@ Placeholder Sections
   vertical-align: top;
   
 }
+.cd-section p span{
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
 
+}
 .cd-section h2 {
   font-size: 20px;
   font-size: 1.25rem;
@@ -1071,7 +1106,7 @@ Placeholder Sections
 
 #cd-placeholder-1{
 	margin-left:16%;
-    width: 60%;
+    width: 56%;
     height: 250px;
     background-color: transparent;
     background-size: cover;
@@ -1080,16 +1115,16 @@ Placeholder Sections
 }
 #cd-placeholder-2{
 	margin-left:-5px;
-    width: 24%;
+    width: 28%;
     height: 250px;
     background-color: transparent;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
 }
-#cd-placeholder-3, #cd-placeholder-5{
+#cd-placeholder-3{
     margin-left:16%;
-    width: 42%;
+    width: 28%;
     height: 250px;
     background-color: transparent;
     background-size: cover;
@@ -1099,9 +1134,9 @@ Placeholder Sections
     
 }
 
-#cd-placeholder-4, #cd-placeholder-6{
+#cd-placeholder-4, #cd-placeholder-5{
 margin-left:-5px;
-    width: 42%;
+    width: 28%;
     height: 250px;
     background-color: transparent;
     background-size: cover;

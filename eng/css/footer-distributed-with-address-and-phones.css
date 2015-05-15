@@ -59,9 +59,12 @@
 	color:  #5C5C3D;
 	font-size: 14px;
 	font-weight: normal;
-	margin: 0;
+	
 }
-
+.footer-company-name{
+	position:relative;
+	bottom:0;
+}
 /* Footer Center */
 
 .footer-distributed .footer-center{
