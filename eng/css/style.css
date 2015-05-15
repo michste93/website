@@ -115,8 +115,8 @@ Navigation
     box-shadow: none;
   }
   .lang-switch{
-    position:absolute;
-	left:200px;
+    position:relative;
+	left:16%;
 	top:15px;
 	z-index: 1005 !important;
 	padding-left:10px;
@@ -280,7 +280,7 @@ Navigation
 	width:100%;
 }
 .fixed-menu a{
-	color:#030d18;
+	color:#fff;
 	
 	vertical-align:center;
 	margin:0 auto;
@@ -310,7 +310,7 @@ Intro
 }
 #cd-intro::after {
   content: "";
-  background: transparent url(../img/pattern.png) repeat top left;
+  background: transparent repeat top left;
   background-size: cover;
   top: 0;
   left: 0;
@@ -364,7 +364,8 @@ Intro
 }
 #cd-intro-fix::after {
     content: "";
-  
+    
+  background-size: cover;
   top: 0;
   left: 0;
   bottom: 0;
@@ -665,7 +666,25 @@ Intro
   -moz-osx-font-smoothing: grayscale;
   color: white;
 }
+.cd-btn1{
+    position:relative;
+    left:18%;
+    top:20px;
+	display: inline-block;
+    padding: 0.5em 1em;
+  background-color: rgba(245, 72, 74, 0.9);
+  border-radius: 16em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+	
+}
 .no-touch .cd-btn:hover {
+  background-color: #f5484a;
+}
+.cd-btn1:hover {
   background-color: #f5484a;
 }
 @media only screen and (min-width: 1170px) {
@@ -1042,7 +1061,7 @@ Placeholder Sections
 #cd-placeholder-1, #cd-placeholder-3, #cd-placeholder-5{
     margin-left:16%;
     width: 42%;
-    height: 200px;
+    height: 250px;
     background-color: transparent;
     background-size: cover;
     background-position: 50% 50%;
@@ -1054,7 +1073,7 @@ Placeholder Sections
 #cd-placeholder-2, #cd-placeholder-4, #cd-placeholder-6{
 margin-left:-5px;
     width: 42%;
-    height: 200px;
+    height: 250px;
     background-color: transparent;
     background-size: cover;
     background-position: 50% 50%;

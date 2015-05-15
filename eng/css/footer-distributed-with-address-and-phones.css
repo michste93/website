@@ -16,7 +16,12 @@
 	display: inline-block;
 	vertical-align: top;
 }
-
+.footer-company-name a{
+	color:#5C5C3D;
+}
+.footer-company-name a:hover{
+	color:white;
+}
 /* Footer left */
 
 .footer-distributed .footer-left{
@@ -51,7 +56,7 @@
 }
 
 .footer-distributed .footer-company-name{
-	color:  #8f9296;
+	color:  #5C5C3D;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
